@@ -4,7 +4,7 @@ data "aws_availability_zones" "aws-az" {
 }
 # create vpc
 resource "aws_vpc" "aws-vpc" {
-  cidr_block = "10.0.31.0/24"
+  cidr_block = "10.31.0.0/16"
   enable_dns_hostnames = true
   tags = {
     Name = "${var.app_name}-vpc"
