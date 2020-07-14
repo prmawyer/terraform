@@ -1,6 +1,12 @@
 variable "access_key" {}
 variable "secret_key" {}
 
+variable "service_name" {
+  type        = "string"
+  description = "Name of Service being deployed"
+  default     = "patrick-terraform-test"
+  }
+
 variable "region" {
   type        = "string"
   description = "AWS Region required by Terraform AWS Provider"
