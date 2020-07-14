@@ -5,5 +5,5 @@ output "ecs_cluster_runner_ip" {
 }
 
 output "ecs_cluster_name" {
-  value = var.ecs_cluster_1
+  value = var.app_name
   }
