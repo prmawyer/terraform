@@ -18,6 +18,7 @@ variable "aws_key_pair_file" {
 variable "aws_region" {
   type = string
   description = "AWS region"
+  default = "us-east-1"
 }
 
 # ECS cluster variables | variables-network.tf
