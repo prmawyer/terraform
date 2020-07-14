@@ -1,4 +1,4 @@
-Terraform {
+terraform {
    backend "s3" {
       bucket = "patrick-harness"
       key = "terraform.tfstate"
