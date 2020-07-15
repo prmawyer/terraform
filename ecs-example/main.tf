@@ -81,7 +81,7 @@ data "aws_iam_policy_document" "ecs-cluster-runner-policy" {
   }
   statement {
     actions = ["ecs:*"]
-    resources = ["arn:aws:ecs:${var.aws_region}:${data.aws_caller_identity.current.account_id}:service/${var.app_name}/*"]
+    resources = ["arn:aws:ecs:${var.region}:${data.aws_caller_identity.current.account_id}:service/${var.app_name}/*"]
   }
 }
 resource "aws_iam_role_policy" "ecs-cluster-runner-role-policy" {
