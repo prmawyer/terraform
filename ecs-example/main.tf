@@ -112,7 +112,7 @@ resource "aws_security_group_rule" "ecs-cluster-host-ssh" {
   from_port = 22
   to_port = 22
   protocol = "tcp"
-  cidr_blocks = var.admin_sources_cidr
+  cidr_blocks = ["0.0.0.0/0"]
 }
 resource "aws_security_group_rule" "ecs-cluster-egress" {
   security_group_id = aws_security_group.ecs-cluster-host.id
