@@ -15,7 +15,7 @@ output "vpc" {
   }
 
 output "subnets" {
-  value = [aws_subnet_aws-subnet.*.id]
+  value = [aws_subnet.aws-subnet.*.id]
   }
 
 output "security_groups" {
