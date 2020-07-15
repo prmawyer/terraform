@@ -9,7 +9,7 @@ output "ecs_cluster_name" {
   }
 
 output "target_execution_role" {
-  value = aws_iam_role_policy.ecs-cluster-runner-role-policy.name
+  value = aws_iam_role.ecsTaskExecutionRole.name
   }
 
 output "region" {
@@ -21,9 +21,9 @@ output "vpc" {
   }
 
 output "subnets" {
-  value = aws_subnet_aws-subnet.*.id
+  value = [aws_subnet_aws-subnet.*.id]
   }
 
 output "security_groups" {
-  value = aws_security_group.ecs-cluster-host.name
+  value = [aws_security_group.ecs-cluster-host.*.name]
   }
