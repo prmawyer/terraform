@@ -1,8 +1,8 @@
 terraform {
    backend "s3" {
-      bucket = "${var.s3_bucketname}"
-      key = "${var.statefile_key}"
-      region = "${var.region}"
+      bucket = "patrick-harness"
+      key = "terraform.state"
+      region = "us-east-1"
    }
 }
 
