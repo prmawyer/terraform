@@ -7,15 +7,7 @@ variable "aws_secret_key" {
   type = string
   description = "AWS secret key"
 }
-variable "aws_key_pair_name" {
-  type = string
-  description = "AWS key pair name"
-}
-variable "aws_key_pair_file" {
-  type = string
-  description = "Location of AWS key pair file"
-}
-variable "aws_region" {
+variable "region" {
   type = string
   description = "AWS region"
   default = "us-east-1"
