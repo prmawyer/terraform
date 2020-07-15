@@ -1,15 +1,15 @@
 terraform {
    backend "s3" {
-      bucket = ${var.bucketname}
-      key = ${var.statefile}
-      region = ${var.region}
+      bucket = "${var.s3_bucketname}"
+      key = "${var.statefile_key}"
+      region = "${var.region}"
    }
 }
 
 provider "aws" {
-   region = ${var.region}
-   access_key = ${var.aws_access_key}
-   secret_key = ${var.aws_secret_key}
+   region = "${var.region}"
+   access_key = "${var.aws_access_key}"
+   secret_key = "${var.aws_secret_key}"
 }
 
 # Network Setup: VPC, Subnet, IGW, Routes | network.tf
