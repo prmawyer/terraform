@@ -11,11 +11,11 @@ output "region" {
   }
 
 output "vpc" {
-  value = aws_vpc.aws-vpc.name
+  value = aws_vpc.aws-vpc.arn
   }
 
 output "subnets" {
-  value = aws_subnet.aws-subnet.*.name
+  value = aws_subnet.aws-subnet.*.arn
   }
 
 output "security_groups" {
