@@ -12,11 +12,18 @@ output "target_execution_role" {
   value = var.app_name
   }
 
+output "region" {
+  value = var.region
+  }
+
 output "vpc" {
+  value = 
   }
 
 output "subnets" {
+  value = 
   }
 
 output "security_groups" {
+  value = 
   }
