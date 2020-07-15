@@ -7,3 +7,16 @@ output "ecs_cluster_runner_ip" {
 output "ecs_cluster_name" {
   value = var.app_name
   }
+
+output "target_execution_role" {
+  value = var.app_name
+  }
+
+output "vpc" {
+  }
+
+output "subnets" {
+  }
+
+output "security_groups" {
+  }
