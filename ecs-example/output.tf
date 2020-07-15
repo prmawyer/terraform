@@ -15,9 +15,9 @@ output "vpc" {
   }
 
 output "subnets" {
-  value = [aws_subnet.aws-subnet.*.id]
+  value = aws_subnet.aws-subnet.*.id
   }
 
 output "security_groups" {
-  value = [aws_security_group.ecs-cluster-host.*.name]
+  value = aws_security_group.ecs-cluster-host.*.name
   }
