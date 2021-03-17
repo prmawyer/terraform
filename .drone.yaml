@@ -6,4 +6,5 @@ pipeline:
     - cd /
     - pwd
     - cd /go/bin
-    - terrascan scan
+    - pwd
+    - ./terrascan scan
