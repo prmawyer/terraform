@@ -1,0 +1,5 @@
+pipeline:
+  terrascan:
+    image: accurics/terrascan:latest
+    commands:
+    - ./terrascan scan
