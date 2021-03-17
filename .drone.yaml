@@ -1,0 +1,6 @@
+pipeline:
+  terrascan:
+    image: accurics/terrascan
+    commands:
+    - cd ./exercise_5
+    - ./terrascan scan
