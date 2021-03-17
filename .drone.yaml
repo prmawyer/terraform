@@ -2,9 +2,5 @@ pipeline:
   terrascan:
     image: accurics/terrascan
     commands:
-    - pwd
-    - cd /
-    - pwd
-    - cd /go/bin
-    - pwd
-    - ./terrascan scan
+    - cd exercise_5
+    - /go/bin/terrascan scan
