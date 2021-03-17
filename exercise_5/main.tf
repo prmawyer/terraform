@@ -18,7 +18,7 @@ resource "aws_ecs_cluster" "ecs-cluster-1" {
 
   resource "aws_autoscaling_group" "ecs-autoscaling-group-1" {
     name                        = "ecs-asg-${var.ecs-cluster-1}"
-    max_size                    = "4"
+    max_size                    = "5"
     min_size                    = "1"
     desired_capacity            = "${var.capacity}"
     vpc_zone_identifier         = ["subnet-0bacaae249a2fd391","subnet-0bacaae249a2fd391"]
