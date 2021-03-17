@@ -4,5 +4,6 @@ pipeline:
     commands:
     - pwd
     - cd /
+    - pwd
     - cd /go/bin
     - terrascan scan
