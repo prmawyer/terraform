@@ -2,5 +2,4 @@ pipeline:
   terrascan:
     image: accurics/terrascan
     commands:
-    - cd go/bin
-    - terrascan scan
+    - ./go/bin/terrascan scan
