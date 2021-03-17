@@ -3,5 +3,6 @@ pipeline:
     image: accurics/terrascan
     commands:
     - pwd
+    - cd /
     - cd /go/bin
     - terrascan scan
