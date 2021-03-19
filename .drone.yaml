@@ -1,6 +1,14 @@
 pipeline:
-  terrascan:
+  Scan_Exercises:
     image: accurics/terrascan
     commands:
-    - cd exercise_5
+    - cd exercise_1
+    - /go/bin/terrascan scan
+    - cd ../exercise_2
+    - /go/bin/terrascan scan
+    - cd ../exercise_3
+    - /go/bin/terrascan scan
+    - cd ../exercise_4
+    - /go/bin/terrascan scan
+    - cd ../exercise_5
     - /go/bin/terrascan scan
