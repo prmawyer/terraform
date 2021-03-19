@@ -45,4 +45,8 @@ resource "aws_ecs_cluster" "ecs-cluster-1" {
                                   #!/bin/bash
                                   echo ECS_CLUSTER=${var.ecs-cluster-1} >> /etc/ecs/ecs.config
                                   EOF
+    metadata_options{
+      http_endpoint = "enabled"
+      http_tokens   = "required"
+    }
 }
