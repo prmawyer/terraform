@@ -11,7 +11,7 @@ pipeline:
   Scan_Exercise_2:
     image: accurics/terrascan
     commands:
-    - cd ../exercise_2
+    - cd exercise_2
     - /go/bin/terrascan scan
     when:
       status:
@@ -20,7 +20,7 @@ pipeline:
   Scan_Exercise_3:
     image: accurics/terrascan
     commands:
-    - cd ../exercise_3
+    - cd exercise_3
     - /go/bin/terrascan scan
     when:
       status:
@@ -29,7 +29,7 @@ pipeline:
   Scan_Exercises_4:
     image: accurics/terrascan
     commands:
-    - cd ../exercise_4
+    - cd exercise_4
     - /go/bin/terrascan scan
     when:
       status:
@@ -38,7 +38,7 @@ pipeline:
   Scan_Exercises_5:
     image: accurics/terrascan
     commands:
-    - cd ../exercise_5
+    - cd exercise_5
     - /go/bin/terrascan scan
     when:
       status:
