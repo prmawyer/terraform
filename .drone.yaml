@@ -3,7 +3,7 @@ type: kubernetes
 name: default
 
 steps:
-- name: Scan_Exercise_1:
+- name: Scan_Exercise_1
   image: accurics/terrascan
   commands:
   - cd exercise_1
@@ -12,7 +12,7 @@ steps:
     status:
     - success
     - failure
--name: Scan_Exercise_2:
+-name: Scan_Exercise_2
  image: accurics/terrascan
  commands:
  - cd exercise_2
@@ -21,7 +21,7 @@ steps:
    status:
    - success
    - failure
--name: Scan_Exercise_3:
+-name: Scan_Exercise_3
  image: accurics/terrascan
  commands:
  - cd exercise_3
@@ -30,7 +30,7 @@ steps:
    status:
    - success
    - failure
--name: Scan_Exercise_4:
+-name: Scan_Exercise_4
  image: accurics/terrascan
  commands:
  - cd exercise_4
@@ -39,7 +39,7 @@ steps:
    status:
    - success
    - failure
--name: Scan_Exercise_5:
+-name: Scan_Exercise_5
  image: accurics/terrascan
  commands:
  - cd exercise_5
