@@ -45,3 +45,4 @@ pipeline:
       - success
       - failure
     depends_on:
+    - clone
