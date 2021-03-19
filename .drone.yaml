@@ -44,3 +44,4 @@ pipeline:
       status:
       - success
       - failure
+    depends_on:
