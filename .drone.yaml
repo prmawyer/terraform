@@ -46,3 +46,6 @@ pipeline:
       - failure
     depends_on:
     - Scan_Exercise_1
+    - Scan_Exercise_2
+    - Scan_Exercise_3
+    - Scan_Exercise_4
