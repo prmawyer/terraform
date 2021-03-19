@@ -26,7 +26,7 @@ pipeline:
       status:
       - success
       - failure
-  Scan_Exercises_4:
+  Scan_Exercise_4:
     image: accurics/terrascan
     commands:
     - cd exercise_4
@@ -35,7 +35,7 @@ pipeline:
       status:
       - success
       - failure
-  Scan_Exercises_5:
+  Scan_Exercise_5:
     image: accurics/terrascan
     commands:
     - cd exercise_5
@@ -45,4 +45,4 @@ pipeline:
       - success
       - failure
     depends_on:
-    - clone
+    - Scan_Exercise_1
