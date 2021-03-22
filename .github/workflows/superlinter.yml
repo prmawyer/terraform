@@ -2,24 +2,23 @@ name: Super-Linter
 
 # Run this workflow every time a new commit pushed to your repository
 on: push
-
+---
+name: Scan Code Base
+on:
+  push:
+  pull_request:
+    branches: [master]
 jobs:
-  # Set the job key. The key is displayed as the job name
-  # when a job name is not provided
-  super-lint:
-    # Name the Job
-    name: Lint code base
-    # Set the type of machine to run on
+  build:
+    name: Scan Code Base
     runs-on: ubuntu-latest
-
     steps:
-      # Checks out a copy of your repository on the ubuntu-latest machine
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v2
-
-      # Runs the Super-Linter action
-      - name: Run Super-Linter
+      - name: Scan Code Base
         uses: github/super-linter@v3
         env:
+          VALIDATE_ALL_CODEBASE: true
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_TERRAFORM_TERRASCAN: true
