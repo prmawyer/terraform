@@ -16,9 +16,8 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
       - name: Scan Code Base
-        uses: github/super-linter@v3
+        uses: github/linter@v3
         env:
-          VALIDATE_ALL_CODEBASE: true
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_TERRAFORM_TERRASCAN: true
