@@ -25,6 +25,9 @@ resource "aws_vpc" "aws-vpc" {
     Environment = var.app_environment
   }
 }
+
+# add flow log block here
+
 # create subnets
 resource "aws_subnet" "aws-subnet" {
   count = length(data.aws_availability_zones.aws-az.names)
