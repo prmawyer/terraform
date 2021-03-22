@@ -1,4 +1,13 @@
 pipeline:
+  Scan_ECS_EXAMPLE:
+    image: accurics/terrascan
+    commands:
+    - cd ecs-example
+    - /go/bin/terrascan scan
+    when:
+      status:
+      - success
+      - failure
   Scan_Exercise_1:
     image: accurics/terrascan
     commands:
