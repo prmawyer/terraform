@@ -36,7 +36,7 @@ resource "aws_s3_bucket_policy" "tf-root-module-bucket"{
         ]
         Condition = {
           IpAddress = {
-            "aws:SourceIp" = "8.8.8.8/32"
+            "aws:SourceIp" = "8.8.8.8/24"
           }
         }
       }
